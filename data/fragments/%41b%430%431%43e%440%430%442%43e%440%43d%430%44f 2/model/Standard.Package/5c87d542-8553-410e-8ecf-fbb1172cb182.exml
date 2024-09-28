@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="лабораторная 2 Вариант 8" version="4">
+  <OBJECT>
+    <ID name="лабораторная 2 Вариант 8" mc="Standard.Package" uid="5c87d542-8553-410e-8ecf-fbb1172cb182"/>
+    <PID name="Лабораторная 2 " mc="Standard.Project" uid="1d6ddd21-104d-45b4-ae4c-58178387af31"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[лабораторная 2 Вариант 8]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Use Case" mc="Standard.Package" uid="b18aff75-373d-437c-818f-d7b8806e602f"/>
+        <COMPID name="Database" mc="Standard.Package" uid="950ed14a-58b5-4ad6-816d-9cee886bfe42"/>
+        <COMPID name="ActionDiagram" mc="Standard.Package" uid="94e056ec-12ae-4a55-a284-be9f294ac497"/>
+        <COMPID name="Class Diagram" mc="Standard.Package" uid="33b23d25-7eaa-4a18-b079-cfa7211fa292"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

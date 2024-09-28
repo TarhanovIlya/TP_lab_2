@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Лабораторная 2" version="4">
+  <OBJECT>
+    <ID name="Лабораторная 2" mc="Infrastructure.DiagramSet" uid="e37f9768-30b7-4184-943b-70864f36f038"/>
+    <PID name="Лабораторная 2" mc="Standard.Project" uid="1d6ddd21-104d-45b4-ae4c-58178387af31"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[Лабораторная 2]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

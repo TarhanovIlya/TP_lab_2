@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Database" version="4">
+  <OBJECT>
+    <ID name="Database" mc="Standard.Package" uid="950ed14a-58b5-4ad6-816d-9cee886bfe42"/>
+    <PID name="лабораторная 2 Вариант 8" mc="Standard.Package" uid="5c87d542-8553-410e-8ecf-fbb1172cb182"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Database]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Учебные руководители" mc="Standard.Class" uid="732d42d2-15d6-4148-878c-0e577aaac4bf"/>
+        <COMPID name="Специальности" mc="Standard.Class" uid="e524bc37-bf2d-4c70-9bbe-db158d979fe2"/>
+        <COMPID name="Проходные баллы специальностей" mc="Standard.Class" uid="bc0823f9-3e44-4554-900c-ec7dd48ceaf8"/>
+        <COMPID name="Планы приема на специальность" mc="Standard.Class" uid="2136d2e8-9282-45d9-976d-e635f6ae7bba"/>
+        <COMPID name="Учебные предметы" mc="Standard.Class" uid="3ac144ad-025d-4e2a-9901-9a5a09ff768d"/>
+        <COMPID name="Форма обучения" mc="Standard.Class" uid="e5a226c8-f713-4b5e-adda-9c584ebc8e2a"/>
+        <COMPID name="Учебные подразделения" mc="Standard.Class" uid="0267d30c-d68b-43e3-906d-1143b16b0e8e"/>
+        <COMPID name="ТипПодразделения" mc="Standard.Class" uid="0df4054c-c99f-40fb-a99a-f1009a7f510a"/>
+        <COMPID name="Время подачи документов на специальность" mc="Standard.Class" uid="5f7d8b64-bd86-4e09-a1e5-c7286e0a83be"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Database Class diagram" mc="Standard.ClassDiagram" uid="ce9ee9b7-370a-487b-8708-4c345c0abb09"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Use Case" version="4">
+  <OBJECT>
+    <ID name="Use Case" mc="Standard.Package" uid="b18aff75-373d-437c-818f-d7b8806e602f"/>
+    <PID name="лабораторная 2 Вариант 8" mc="Standard.Package" uid="5c87d542-8553-410e-8ecf-fbb1172cb182"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Use Case]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="АИС" mc="Standard.Actor" uid="6e25c9f6-778e-4b52-93a9-59917b7590a3"/>
+        <COMPID name="Запросить Информацию у  БД" mc="Standard.UseCase" uid="2a164be5-20aa-4b54-b1c7-67fc5d7ce7a2"/>
+        <COMPID name="Абитуриент" mc="Standard.Actor" uid="b964518f-886a-41fa-ab80-8439afc23761"/>
+        <COMPID name="Запросить Информацию " mc="Standard.UseCase" uid="09c58ea6-cef7-4c8f-86a7-ad4778c1adbb"/>
+        <COMPID name="База данных" mc="Standard.Actor" uid="6ef69816-5170-4cb5-8e1c-1187b29b8aa8"/>
+        <COMPID name="Предоставить информацию" mc="Standard.UseCase" uid="1b58361b-7bc6-48f7-89d7-a91bd852d5ca"/>
+        <COMPID name="Вывести информацию" mc="Standard.UseCase" uid="e720f8b8-1f1c-41dc-a393-dc39c12099f8"/>
+        <COMPID name="Запросить 	список специальностей" mc="Standard.UseCase" uid="85130981-38dd-4b90-af14-771b6e201d6a"/>
+        <COMPID name="Запросить адрес учебных подразделений" mc="Standard.UseCase" uid="e80c01cb-d419-454c-b790-f3cd209a51b5"/>
+        <COMPID name="Запросить 	телефоны учебных подразделений" mc="Standard.UseCase" uid="7f006903-3eef-4547-8a4d-c70dd9675a6a"/>
+        <COMPID name="Запросить адрес сайта учебного подразделения" mc="Standard.UseCase" uid="864c9f29-6c88-4f52-968c-a481285f1c25"/>
+        <COMPID name="Запросить информацио по каждой форме обучения" mc="Standard.UseCase" uid="d068ede2-63b7-4a64-ae03-2bab3e0b3dc9"/>
+        <COMPID name="Запросить  план приема на специальность на каждый год" mc="Standard.UseCase" uid="4a220782-e423-46f4-8aa6-07159a23d73d"/>
+        <COMPID name="Запросить перечень ЕГЭ предметов для специальности" mc="Standard.UseCase" uid="e187705d-2603-483a-a68b-0689a30259f6"/>
+        <COMPID name="Запросить проходной балл на специальность" mc="Standard.UseCase" uid="944f7d5b-a42c-402d-89e4-3af68ff26574"/>
+        <COMPID name="Обработать данные" mc="Standard.UseCase" uid="d1e02896-ddb8-454f-9c42-e96390cf444f"/>
+        <COMPID name="Создать список специальностей заданной формы обучения и планы приема на заданный год " mc="Standard.UseCase" uid="01c7dcea-7d5d-41d4-a5a4-159c3fbe3bc3"/>
+        <COMPID name="Создать наименование специальности, на которую был максимальный проходной балл по математике на заданный год " mc="Standard.UseCase" uid="99880a2d-a428-420f-ad62-4e7f93535e8a"/>
+        <COMPID name="Создать список руководителей учебных подразделений, имеющих ученую степень
+«доктор наук» и ученое звание «профессор»
+на заданный год " mc="Standard.UseCase" uid="9b6d905a-21c3-47e4-b60a-86e41c33aefc"/>
+        <COMPID name="Запросить информацию о руководителе" mc="Standard.UseCase" uid="3e6ac7a2-a107-4a74-b031-2d40e4df899c"/>
+        <COMPID name="Перевести данные в удобный вид" mc="Standard.UseCase" uid="c1286c5c-54a8-4868-9522-392e369896d6"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Use Case diagram" mc="Standard.UseCaseDiagram" uid="40ba5461-4f23-4aeb-9a0a-146b3b05cb8b"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

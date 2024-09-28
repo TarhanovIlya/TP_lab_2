@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ActionDiagram" version="4">
+  <OBJECT>
+    <ID name="ActionDiagram" mc="Standard.Package" uid="94e056ec-12ae-4a55-a284-be9f294ac497"/>
+    <PID name="лабораторная 2 Вариант 8" mc="Standard.Package" uid="5c87d542-8553-410e-8ecf-fbb1172cb182"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[ActionDiagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Действия абитуриента" mc="Standard.Activity" uid="8f30aeb7-1e26-4c7c-920b-d595e91f69dc"/>
+        <COMPID name="Действия сайта ВУЗа" mc="Standard.Activity" uid="70dd9c6a-31ad-4929-b134-3292694139fc"/>
+        <COMPID name="Действия Базы Данных (БД)" mc="Standard.Activity" uid="069ee79d-f4f6-4189-8e08-53c4118bc730"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
