@@ -31,7 +31,7 @@
                 <DEPENDENCIES>
                   <LINK relation="Target">
                     <REFOBJ>
-                      <ID name="Собрать информацию" mc="Standard.OpaqueAction" uid="a8db6835-74c9-44d7-9165-c8765265d316"/>
+                      <ID name="Decision-Merge" mc="Standard.DecisionMergeNode" uid="f8be8629-4bee-49be-b9a3-ea572fb0b6d6"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -57,12 +57,12 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Отправить строку сайту ВУЗа" mc="Standard.OpaqueAction" uid="824f2ce0-c34f-4745-9972-51b0ac19915a"/>
+          <ID name="Отправить сайту ВУЗа" mc="Standard.OpaqueAction" uid="824f2ce0-c34f-4745-9972-51b0ac19915a"/>
           <ATTRIBUTES>
             <ATT name="Body"></ATT>
             <ATT name="IsMultipleInstance">false</ATT>
             <ATT name="IsCompensation">false</ATT>
-            <ATT name="Name"><![CDATA[Отправить строку сайту ВУЗа]]></ATT>
+            <ATT name="Name"><![CDATA[Отправить сайту ВУЗа]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
@@ -98,7 +98,7 @@
           <DEPENDENCIES>
             <COMP relation="Outgoing">
               <OBJECT>
-                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="e1b9d6f2-bc73-4b9d-9748-f80ac3aa5dc0"/>
+                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="4600b043-46cf-4ff4-8140-58047bc30490"/>
                 <ATTRIBUTES>
                   <ATT name="Guard"></ATT>
                   <ATT name="Weight"><![CDATA[1]]></ATT>
@@ -108,7 +108,7 @@
                 <DEPENDENCIES>
                   <LINK relation="Target">
                     <REFOBJ>
-                      <ID name="Информация есть в БД?" mc="Standard.ConditionalNode" uid="8ecddb47-628a-4ad3-a82d-4451388bfc3b"/>
+                      <ID name="Перевести информацию в строку для отправки" mc="Standard.OpaqueAction" uid="d7d07c39-8774-4aae-bf6f-3b69eb113127"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -138,7 +138,7 @@
                 <DEPENDENCIES>
                   <LINK relation="Target">
                     <REFOBJ>
-                      <ID name="Отправить строку сайту ВУЗа" mc="Standard.OpaqueAction" uid="824f2ce0-c34f-4745-9972-51b0ac19915a"/>
+                      <ID name="Отправить сайту ВУЗа" mc="Standard.OpaqueAction" uid="824f2ce0-c34f-4745-9972-51b0ac19915a"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -165,57 +165,25 @@
           <DEPENDENCIES>
             <COMP relation="Outgoing">
               <OBJECT>
-                <ID name="Да" mc="Standard.ControlFlow" uid="1d566046-2976-4dd2-940e-084d0d6615e1"/>
+                <ID name="Информация есть" mc="Standard.ControlFlow" uid="c65f4b23-d448-4846-b4ab-8f88fe0114f9"/>
                 <ATTRIBUTES>
                   <ATT name="Guard"></ATT>
                   <ATT name="Weight"><![CDATA[1]]></ATT>
-                  <ATT name="Name"><![CDATA[Да]]></ATT>
+                  <ATT name="Name"><![CDATA[Информация есть]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <LINK relation="Target">
                     <REFOBJ>
-                      <ID name="Перевести информацию в строку для отправки" mc="Standard.OpaqueAction" uid="d7d07c39-8774-4aae-bf6f-3b69eb113127"/>
+                      <ID name="Сообщение об ошибке" mc="Standard.OpaqueAction" uid="bed069b0-dd3a-46f6-9645-027a6699cd4d"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Нет" mc="Standard.ControlFlow" uid="c65f4b23-d448-4846-b4ab-8f88fe0114f9"/>
+                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="670f4203-771b-4afc-83e8-99e6bf7e3f54"/>
                 <ATTRIBUTES>
-                  <ATT name="Guard"></ATT>
-                  <ATT name="Weight"><![CDATA[1]]></ATT>
-                  <ATT name="Name"><![CDATA[Нет]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="Target">
-                    <REFOBJ>
-                      <ID name="Создать строку &quot;Информация не найдена&quot;" mc="Standard.OpaqueAction" uid="bed069b0-dd3a-46f6-9645-027a6699cd4d"/>
-                    </REFOBJ>
-                  </LINK>
-                </DEPENDENCIES>
-              </OBJECT>
-            </COMP>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="Информация есть в БД?" mc="Standard.ConditionalNode" uid="8ecddb47-628a-4ad3-a82d-4451388bfc3b"/>
-          <ATTRIBUTES>
-            <ATT name="IsDeterminate">false</ATT>
-            <ATT name="IsAssured">false</ATT>
-            <ATT name="MustIsolate">false</ATT>
-            <ATT name="IsMultipleInstance">false</ATT>
-            <ATT name="IsCompensation">false</ATT>
-            <ATT name="Name"><![CDATA[Информация есть в БД?]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <COMP relation="Outgoing">
-              <OBJECT>
-                <ID name="ControlFlow" mc="Standard.ControlFlow" uid="13035f55-a68f-4326-90fc-0059280c0458"/>
-                <ATTRIBUTES>
-                  <ATT name="Guard"></ATT>
+                  <ATT name="Guard"><![CDATA[Информации нет]]></ATT>
                   <ATT name="Weight"><![CDATA[1]]></ATT>
                   <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -223,7 +191,7 @@
                 <DEPENDENCIES>
                   <LINK relation="Target">
                     <REFOBJ>
-                      <ID name="Decision-Merge" mc="Standard.DecisionMergeNode" uid="f8be8629-4bee-49be-b9a3-ea572fb0b6d6"/>
+                      <ID name="Собрать информацию" mc="Standard.OpaqueAction" uid="a8db6835-74c9-44d7-9165-c8765265d316"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -232,12 +200,12 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Создать строку &quot;Информация не найдена&quot;" mc="Standard.OpaqueAction" uid="bed069b0-dd3a-46f6-9645-027a6699cd4d"/>
+          <ID name="Сообщение об ошибке" mc="Standard.OpaqueAction" uid="bed069b0-dd3a-46f6-9645-027a6699cd4d"/>
           <ATTRIBUTES>
             <ATT name="Body"></ATT>
             <ATT name="IsMultipleInstance">false</ATT>
             <ATT name="IsCompensation">false</ATT>
-            <ATT name="Name"><![CDATA[Создать строку "Информация не найдена"]]></ATT>
+            <ATT name="Name"><![CDATA[Сообщение об ошибке]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
@@ -253,7 +221,7 @@
                 <DEPENDENCIES>
                   <LINK relation="Target">
                     <REFOBJ>
-                      <ID name="Отправить строку сайту ВУЗа" mc="Standard.OpaqueAction" uid="824f2ce0-c34f-4745-9972-51b0ac19915a"/>
+                      <ID name="Отправить сайту ВУЗа" mc="Standard.OpaqueAction" uid="824f2ce0-c34f-4745-9972-51b0ac19915a"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -302,7 +270,7 @@
         </OBJECT>
       </COMP>
       <COMP relation="Product">
-        <COMPID name="Действия Базы Данных (БД) Diagram" mc="Standard.ActivityDiagram" uid="a2fae484-3aee-4f3d-b0db-1d9170419241"/>
+        <COMPID name="Действия Класс Связи Базы Данных (БД) Diagram" mc="Standard.ActivityDiagram" uid="a2fae484-3aee-4f3d-b0db-1d9170419241"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

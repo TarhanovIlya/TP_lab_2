@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="АИС" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Сайт ВУЗа" version="4">
   <OBJECT>
-    <ID name="АИС" mc="Standard.Actor" uid="6e25c9f6-778e-4b52-93a9-59917b7590a3"/>
+    <ID name="Сайт ВУЗа" mc="Standard.Actor" uid="6e25c9f6-778e-4b52-93a9-59917b7590a3"/>
     <PID name="Use Case" mc="Standard.Package" uid="b18aff75-373d-437c-818f-d7b8806e602f"/>
     <ATTRIBUTES>
       <ATT name="IsElementary">false</ATT>
@@ -9,7 +9,7 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[АИС]]></ATT>
+      <ATT name="Name"><![CDATA[Сайт ВУЗа]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
@@ -155,7 +155,7 @@
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="Target">
-              <ID name="Обработать данные" mc="Standard.UseCase" uid="d1e02896-ddb8-454f-9c42-e96390cf444f"/>
+              <ID name="Обработать информацию" mc="Standard.UseCase" uid="d1e02896-ddb8-454f-9c42-e96390cf444f"/>
             </LINK>
             <COMP relation="Opposite">
               <OBJECT>

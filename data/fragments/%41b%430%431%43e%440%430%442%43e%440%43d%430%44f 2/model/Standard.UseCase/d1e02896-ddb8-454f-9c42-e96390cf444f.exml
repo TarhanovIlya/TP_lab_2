@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Обработать данные" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Обработать информацию" version="4">
   <OBJECT>
-    <ID name="Обработать данные" mc="Standard.UseCase" uid="d1e02896-ddb8-454f-9c42-e96390cf444f"/>
+    <ID name="Обработать информацию" mc="Standard.UseCase" uid="d1e02896-ddb8-454f-9c42-e96390cf444f"/>
     <PID name="Use Case" mc="Standard.Package" uid="b18aff75-373d-437c-818f-d7b8806e602f"/>
     <ATTRIBUTES>
       <ATT name="IsElementary">false</ATT>
@@ -9,20 +9,20 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Обработать данные]]></ATT>
+      <ATT name="Name"><![CDATA[Обработать информацию]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="Used">
         <OBJECT>
-          <ID name="UseCaseDependency" mc="Standard.UseCaseDependency" uid="d92ed14e-ef31-4f46-aa8d-9f9ae543fa50"/>
+          <ID name="UseCaseDependency" mc="Standard.UseCaseDependency" uid="df616fc9-c97f-4848-8f5f-1b99e5140318"/>
           <ATTRIBUTES>
             <ATT name="Name"><![CDATA[UseCaseDependency]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="Target">
-              <ID name="Создать наименование специальности, на которую был максимальный проходной балл по математике на заданный год " mc="Standard.UseCase" uid="99880a2d-a428-420f-ad62-4e7f93535e8a"/>
+              <ID name="Сортировать информацию" mc="Standard.UseCase" uid="709158f3-ea2d-4249-ab05-0b18ccde5774"/>
             </LINK>
             <LINK relation="Extension">
               <FOREIGNID name="include" mc="Infrastructure.Stereotype" uid="00000000-0000-9c49-0000-000000000000"/>

@@ -18,6 +18,119 @@
         <COMPID name="СайтВУЗа" mc="Standard.Class" uid="c712c720-118a-4ec5-8aed-2d0fbc0568a8"/>
         <COMPID name="КлассСвязиБД" mc="Standard.Class" uid="a6375f0f-e338-49ea-b921-fc6f8e437739"/>
         <COMPID name="окно" mc="Standard.Class" uid="9a3b6fc7-8592-4b2a-b833-173a9ae0f817"/>
+        <COMPID name="Администратор" mc="Standard.Class" uid="b8205bef-16f3-4925-b300-6539adbf3d51"/>
+        <COMPID name="ИнформационныйОбъект" mc="Standard.Class" uid="2db8c8d3-58f7-4d68-bc03-28c68a917753"/>
+        <OBJECT>
+          <ID name="Операция" mc="Standard.Enumeration" uid="d1e6febb-9b3a-421f-96c7-79220e81c95f"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[Операция]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Value">
+              <OBJECT>
+                <ID name="Удалить = 1" mc="Standard.EnumerationLiteral" uid="cacdbd30-3478-451a-bda4-f420f944eab3"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Удалить = 1]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Изменить = 2" mc="Standard.EnumerationLiteral" uid="12184751-b864-4c25-bc1c-471447aad678"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Изменить = 2]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Добавить = 3" mc="Standard.EnumerationLiteral" uid="6514debe-a145-4f76-962f-866a7008d826"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Добавить = 3]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Вывести = 4" mc="Standard.EnumerationLiteral" uid="2be70449-be0d-4ab1-8987-b9830f7ab8c4"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Вывести = 4]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="OwnedEnd">
+              <OBJECT>
+                <ID name="операция" mc="Standard.AssociationEnd" uid="01ec3455-76b7-40ea-9fdc-ce806f591cba"/>
+                <ATTRIBUTES>
+                  <ATT name="Aggregation">KindIsAssociation</ATT>
+                  <ATT name="IsChangeable">true</ATT>
+                  <ATT name="Changeable">AccesNone</ATT>
+                  <ATT name="IsDerived">false</ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Visibility">Public</ATT>
+                  <ATT name="IsClass">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="Name"><![CDATA[операция]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <ID name="Пользователь" mc="Standard.Class" uid="51c79ccc-7caf-4acb-83eb-111cb2ed49e2"/>
+                  </LINK>
+                  <COMP relation="Opposite">
+                    <OBJECT>
+                      <ID name="" mc="Standard.AssociationEnd" uid="06a58dc9-85c7-4258-833c-a4b5a3b372c3"/>
+                      <ATTRIBUTES>
+                        <ATT name="Aggregation">KindIsAssociation</ATT>
+                        <ATT name="IsChangeable">true</ATT>
+                        <ATT name="Changeable">AccesNone</ATT>
+                        <ATT name="IsDerived">false</ATT>
+                        <ATT name="IsOrdered">false</ATT>
+                        <ATT name="IsUnique">false</ATT>
+                        <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                        <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                        <ATT name="Visibility">Public</ATT>
+                        <ATT name="IsClass">false</ATT>
+                        <ATT name="IsAbstract">false</ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Opposite">
+                          <COMPID name="операция" mc="Standard.AssociationEnd" uid="01ec3455-76b7-40ea-9fdc-ce806f591cba"/>
+                        </COMP>
+                        <COMP relation="Association">
+                          <OBJECT>
+                            <ID name="" mc="Standard.Association" uid="50ac774c-a3a7-453c-8bd0-c4df896dba6d"/>
+                            <ATTRIBUTES>
+                              <ATT name="Name"></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <COMP relation="Association">
+                    <COMPID name="" mc="Standard.Association" uid="50ac774c-a3a7-453c-8bd0-c4df896dba6d"/>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
       </COMP>
       <COMP relation="Product">
         <COMPID name="Class Diagram Class diagram" mc="Standard.ClassDiagram" uid="4552f518-73f7-4fc3-818c-044312916931"/>
